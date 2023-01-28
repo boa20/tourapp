@@ -1,26 +1,24 @@
-import React from "react";
 
-const BookForm = () => {
+
+const Register = () => {
     return (
         <div className="container">
           <div className="row d-flex justify-content-center p-5">
             <div className="col-md-8">
               <form>
                 <div className="mb-3">
-                  <label for="fullName" className="form-label">Full Name</label>
-                  <input type="text" className="form-control" id="fullName" placeholder="Enter your full name"/>
+                  <label for="userName" className="form-label"> Username</label>
+                  <input type="text" className="form-control" id="userName" placeholder="Enter a user name"/>
                 </div>
                 <div className="mb-3">
                   <label for="exampleInputEmail1" className="form-label">Email address</label>
                   <input type="email" className="form-control" id="exampleInputEmail1" placeholder="Enter your email"/>
                 </div>
                 <div className="mb-3">
-                  <label for="phone" className="form-label">Telephone</label>
-                  <input type="tel" className="form-control" id="phone" placeholder="Enter your phone number"/>
+                  <label for="passphrase" className="form-label">Password</label>
+                  <input type="password" className="form-control" id="passphrase" placeholder="Enter a password"/>
                 </div>
-                <div className="d-grid justify-content-end">
-                  <button type="submit" className="btn btn-primary">Book Tour</button>
-                </div>
+                <button type="submit" className="btn btn-primary">Register</button>
               </form>
             </div>  
           </div>
@@ -28,4 +26,4 @@ const BookForm = () => {
     )
 }
 
-export default BookForm;
+export default Register;
